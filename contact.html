@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website - Contact</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="contact-form">
+  <h2>Contact Us</h2>
+  <p>Please fill out this form and we will display your input below.</p>
+  <form id="contactForm">
+    <input type="text" id="name" name="name" placeholder="Your name..">
+    <input type="email" id="email" name="email" placeholder="Your email..">
+    <input type="text" id="subject" name="subject" placeholder="Subject..">
+    <textarea id="message" name="message" placeholder="Write something.."></textarea>
+    <button type="button" onclick="displayInput()">Submit</button>
+  </form>
+  <div id="userInputDisplay"></div>
+</div>
+
+<div class="icon-container">
+  <i class="fas fa-envelope fa-3x"></i>
+  <i class="fas fa-phone fa-3x"></i>
+  <i class="fas fa-map-marker-alt fa-3x"></i>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
